@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         postRequest.enqueue(object : Callback<Token> {
             override fun onFailure(call: Call<Token>, t: Throwable) {
                 Log.d("msg", t.message!!)
+                Log.d("msg", t.message!!)
             }
 
             override fun onResponse(call: Call<Token>, response: Response<Token>) {
